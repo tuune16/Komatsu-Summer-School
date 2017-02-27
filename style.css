@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    font-family: "Mplus 1p";
+}
+
+#header {
+    width: 100%;
+    background: #fff;
+    padding: 0px;
+    position: fixed;
+    z-index: 2;
+}
+
+nav {
+    height: 55px;
+    margin-top: 0px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-bottom: 1px solid #201E51;
+}
+
+nav li {
+    flex-grow: 1;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 55px;
+    display: inline-block;
+}
+
+#header img {
+    padding-top: 8px;
+}
+
+#main-visual {
+    width: 100%;
+    height: 620px;
+    background: #000 url(main.JPG) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.visual {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.visual h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.visual h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.visual p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.sub-visual {
+    background: #000;
+    width: 100%;
+    height: 620px;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.visual2 {
+    position: absolute;
+    top: 70%;
+    z-index: 2;
+}
+
+.button {
+    width: 300px;
+    height: 80px;
+    border: 1px solid #fff;
+    float: left;
+}
+
+.button h1 {
+    font-size: 32px;
+}
+
+#kss {
+    margin-left: 100px;
+}
+
+#apply {
+    margin-left: 80px;
+}
+
+#contacts {
+    margin-left: 80px;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.content {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    float: left;
+    margin-top: 60px;
+}
+
+#news {
+    margin-left: 100px;
+}
+
+#social {
+    margin-left: 60px
+}
+
+.content h1{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.fb-page {
+    margin-left: 50px;
+}
+
+.content p {
+    margin: 0 50px; 
+    line-height: 1.7;
+}
