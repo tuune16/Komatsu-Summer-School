@@ -12,12 +12,15 @@ body {
     font-family: "Mplus 1p";
 }
 
+
+/*ナビ*/
+
 #header {
     width: 100%;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
     padding: 0px;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 }
 
 nav {
@@ -29,7 +32,6 @@ ul {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    border-bottom: 1px solid #201E51;
 }
 
 nav li {
@@ -43,7 +45,7 @@ nav li {
 nav a {
     font-size: 16px;
     text-decoration: none;
-    color: #000000;
+    color: #201E51;
     line-height: 55px;
     display: inline-block;
 }
@@ -52,18 +54,23 @@ nav a {
     padding-top: 8px;
 }
 
+
+/*トップ画像*/
+
 #main-visual {
     width: 100%;
     height: 620px;
-    background: #000 url(main.JPG) center center no-repeat;
+    background: rgba(0, 0, 0, 0.5) url(main.JPG) center center no-repeat;
     background-size: cover;
+    background-blend-mode: overlay;
     position: relative;
     color: #fff;
-    text-align: center;
+    text-align: left;
 }
 
 .visual {
     width: 100%;
+    padding-left: 100px;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -74,23 +81,31 @@ nav a {
     transform: translate(-50%, -50%);
 }
 
-.visual h1 {
-    font-size: 48px;
+.top-title {
+    font-size: 56px;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
-.visual h2 {
+.sub-title {
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.visual p {
+.overview {
     font-size: 14px;
     line-height: 1.7;
 }
 
+.youtube {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
+
+
+/*
 .sub-visual {
     background: #000;
     width: 100%;
@@ -99,10 +114,18 @@ nav a {
     opacity: 0.5;
     z-index: 1;
 }
+*/
 
 .visual2 {
+    width: 100%;
     position: absolute;
-    top: 70%;
+    top: 75%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -25%);
+    -ms-transform: translate(-50%, -25%);
+    -o-transform: translate(-50%, -25%);
+    transform: translate(-50%, -25%);
+    /*    translate(x, y)!!!!*/
     z-index: 2;
 }
 
@@ -111,10 +134,18 @@ nav a {
     height: 80px;
     border: 1px solid #fff;
     float: left;
+    text-align: center;
 }
 
-.button h1 {
-    font-size: 32px;
+.button h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.button p {
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 #kss {
@@ -129,39 +160,136 @@ nav a {
     margin-left: 80px;
 }
 
+.visual2 a {
+    width: 300px;
+    height: 80px;
+    border: none;
+    float: left;
+    /*    ↑これがないとhoverのbackgroungが機能しない*/
+    text-decoration: none;
+    color: #fff;
+}
+
+.visual2 a:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+
+/*What's NewとFB*/
+
 .container {
     width: 100%;
-    height: 600px;
     display: block;
+    margin-top: 90px;
 }
 
 .content {
-    width: 500px;
-    height: 500px;
-    border: 1px solid #000;
+    height: 460px;
     float: left;
-    margin-top: 60px;
 }
 
 #news {
+    width: 680px;
     margin-left: 100px;
 }
 
 #social {
-    margin-left: 60px
+    width: 360px;
+    margin-left: 20px
 }
 
-.content h1{
-    font-size: 40px;
+
+/*
+#twitter {
+    width: 300px;
+    margin-left: 20px
+} 
+*/
+
+.topic-title {
+    color: #fff;
+    font-size: 20px;
     font-weight: 400;
+    padding: 10px 0 10px 0px;
     text-align: center;
-}
-
-.fb-page {
-    margin-left: 50px;
+    background: #FF961B;
 }
 
 .content p {
-    margin: 0 50px; 
+    font-size: 14px;
     line-height: 1.7;
+    margin: 11px 0;
+    padding: 12px 10px;
+    border-left: 5px solid #FF961B;
+    background-color: #efefef;
+}
+
+.date {
+    color: #a3a2a2;
+    font-weight: 800;
+}
+
+.news {
+    color: #201E51;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.fb-page {
+    margin-top: 10px;
+}
+
+
+/*
+.twitter {
+    margin-top: 10px;
+}
+*/
+
+
+/*挨拶*/
+
+.content2 {
+    width: 1060px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.content2 h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 10px 0 10px 20px;
+    background: #FF961B;
+}
+
+.greeting {
+    width: 650px;
+    float: left;
+}
+
+.greeting-text {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 20px 0px 20px 5px;
+}
+
+.signature {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: right;
+}
+
+.name {
+    font-size: 24px;
+}
+
+.content2 img {
+    margin-top: 20px;
+    margin-left: 20px;
 }
