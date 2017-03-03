@@ -8,6 +8,7 @@
     <!--    <link href="http://fonts.googleapis.com/css?family=Sansita:400,100" rel="stylesheet" type="text/css">-->
     <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
     <div id="fb-root"></div>
     <div id="fb-root"></div>
     <script>
@@ -20,9 +21,10 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+
 </head>
 
-<body>
+<body id="body">
     <div id="header">
         <nav>
             <ul>
@@ -39,18 +41,18 @@
 
     <div id="main-visual">
         <div class="visual">
-            <h1 class="top-title">小松サマースクール</h1>
-            <h2 class="sub-title">北陸で、世界を広げる７日間。</h2>
-            <p class="overview">小松サマースクールは、国内外の大学生が共に築く、高校生のためのサマースクールです。
-                <br> 2014年に始まり、毎年夏に石川県小松市で開催しています。
-                <br> 高校生がいつもの生活から一歩踏み出し、 視野を広げ、
-                <br>将来を思い描けるような「きっかけ」づくりを目的としています。</p>
+            <div class="title">
+                <h1 class="top-title">小松サマースクール</h1>
+                <h2 class="sub-title">北陸で、世界を広げる７日間。</h2>
+                <p class="overview">小松サマースクールは、国内外の大学生が共に築く、高校生のためのサマースクールです。
+                    <br> 2014年に始まり、毎年夏に石川県小松市で開催しています。
+                    <br> 高校生がいつもの生活から一歩踏み出し、 視野を広げ、
+                    <br>将来を思い描けるような「きっかけ」づくりを目的としています。</p>
+            </div>
+            <div class="video">
+                <iframe width="400" height="280" src="https://www.youtube.com/embed/CxtYQlhXxCo" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="youtube">
-            <iframe width="400" height="250" src="https://www.youtube.com/embed/CxtYQlhXxCo" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-
         <div class="visual2">
             <div id="kss" class="button">
                 <a href="#">
@@ -71,28 +73,28 @@
                 </a>
             </div>
         </div>
-
-<!--        <div class="sub-visual"></div>-->
+        <!--        <div class="sub-visual"></div>-->
     </div>
 
-    <div class="container">
-        <div id="news" class="content">
-            <h3 class="topic-title">What's New</h3>
-            <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
-            <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
-            <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
-            <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
-            <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
-            <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
-            <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
-        </div>
-        <div id="social" class="content">
-            <h3 class="topic-title">Facebook</h3>
-            <div class="fb-page" data-href="https://www.facebook.com/komatsusummerschool/" data-tabs="timeline" data-width="400" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/komatsusummerschool/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/komatsusummerschool/">小松サマースクール</a></blockquote>
+    <div class="main-contents">
+        <div class="container1">
+            <div id="news" class="content">
+                <h3 class="topic-title">What's New</h3>
+                <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
+                <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
+                <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
+                <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
+                <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
+                <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
+                <p><span class="date">2016.12.25</span><a href="#" class="news">KSSの紹介ビデオが完成しました！</a></p>
             </div>
-        </div>
-        <!--
+            <div id="social" class="content">
+                <h3 class="topic-title">Facebook</h3>
+                <div class="fb-page" data-href="https://www.facebook.com/komatsusummerschool/" data-tabs="timeline" data-width="400" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/komatsusummerschool/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/komatsusummerschool/">小松サマースクール</a></blockquote>
+                </div>
+            </div>
+            <!--
         <div id="twitter" class="content">
             <h3 class="topic-title">Twitter</h3>
             <div class="twitter">
@@ -100,52 +102,70 @@
             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
         </div>
 -->
-    </div>
-
-    <div class="container">
-        <div id="stephane" class="content2">
-            <h3>代表挨拶</h3>
-            <div class="greeting">
-                <p class="greeting-text">Seize your own journey in life 「可愛い子には旅をさせよ」- One of the first 諺 that I learned in Japanese and that embodies best the spirit of Komatsu Summer School. Although simple, that saying resonates strongly with me as it highlights a turning point in my life - my first journey. At the age of 11, protesters wanting to send a message to the government attacked my school in Haiti, where I always thought to be a safe ground. A few months later, my mother put me on a plane and sent me away to live with relatives in New York. A mother protecting her child would try and keep her son or daughter as closer to her as possible. My mother saw beyond that and decided to send her son abroad to “travel”.
-                    <br>To all Komatsu Summer School participants, see this program as the first step of your journey. Away from the shackles of our daily lives, see this summer school as an opportunity to experiment and learn. My journey was forced upon. Through grit and perseverance, I've reached the level that I am in today. Some opportunities are hidden in unfortunate events. While, some opportunities are a once in a lifetime chance.With an open mind, seize your own journey.
-                </p>
-                <p class="signature">小松サマースクール代表
-                    <br>タクトピア株式会社アドバイザー
-                    <br>フォースバレー・コンシェルジュ株式会社アドバイザー
-                    <br>Harvard College Japan Initiative 名誉会長
-                    <br><span class="name">Stephane Fouche</span></p>
-            </div>
-            <img src="stephane2.jpg" alt="Stephane Fouche" width="390">
         </div>
-        <div id="kei" class="content2">
-            <h3>実行委員長挨拶</h3>
-            <div class="greeting">
-                <p class="greeting-text"> 私は2016年にハウスリーダーとして 初めて小松サマースクールに関わり、そして多くを学びました。自分にとって非常に新鮮な、高校生ならではの意見を聞くことができ、自分を振り返ることができました。高校生が大学生から学んだことよりも、私が高校生から学んだことの方が多かったかもしれません。小松サマースクールは高校生にリベラルアーツ教育を経験してもらうサマースクールです。学生や生徒だけが受け身で学ぶのではなく、先生も学生・生徒との交わりからたくさん学ぶ、互いに学び合う、それがリベラルアーツだと思います。小松サマースクールも大学生、高校生、そして講師の大人の方々が互いに学び合う、そんなコミュニティーだと思います。
-                    <br>私たちは運営スタッフとして、高校生のみなさんによりよい経験をしてもらうために頑張っています。しかし、最後の答えまで準備するのは私たちの役目ではありません。高校生のみなさんにはKSSを通して、貪欲にどんどんいろんなことを吸収していってほしいと思います。
-                    <br>みなさんにお会いできること、そしてみなさんと学び合うこと、楽しみにしています！
-                </p>
-                <p class="signature">小松サマースクール2017 実行委員長
-                    <br>国際基督教大学教養学部4年
-                    <br><span class="name">加藤 慶</span></p>
+
+        <div class="container2">
+            <div id="stephane" class="content2">
+                <h3>代表挨拶</h3>
+                <div class="greeting">
+                    <p class="greeting-text">Seize your own journey in life 「可愛い子には旅をさせよ」- One of the first 諺 that I learned in Japanese and that embodies best the spirit of Komatsu Summer School. Although simple, that saying resonates strongly with me as it highlights a turning point in my life - my first journey. At the age of 11, protesters wanting to send a message to the government attacked my school in Haiti, where I always thought to be a safe ground. A few months later, my mother put me on a plane and sent me away to live with relatives in New York. A mother protecting her child would try and keep her son or daughter as closer to her as possible. My mother saw beyond that and decided to send her son abroad to “travel”.
+                        <br>To all Komatsu Summer School participants, see this program as the first step of your journey. Away from the shackles of our daily lives, see this summer school as an opportunity to experiment and learn. My journey was forced upon. Through grit and perseverance, I've reached the level that I am in today. Some opportunities are hidden in unfortunate events. While, some opportunities are a once in a lifetime chance.With an open mind, seize your own journey.
+                    </p>
+                    <p class="signature">小松サマースクール代表
+                        <br>タクトピア株式会社アドバイザー
+                        <br>フォースバレー・コンシェルジュ株式会社アドバイザー
+                        <br>Harvard College Japan Initiative 名誉会長
+                        <br><span class="name">Stephane Fouche</span></p>
+                </div>
+                <img src="stephane2.jpg" alt="Stephane Fouche" width="390">
             </div>
-            <img src="kei.jpg" alt="Kei Kato" width="390">
+            <div id="kei" class="content2">
+                <h3>実行委員長挨拶</h3>
+                <div class="greeting">
+                    <p class="greeting-text"> 私は2016年にハウスリーダーとして 初めて小松サマースクールに関わり、そして多くを学びました。自分にとって非常に新鮮な、高校生ならではの意見を聞くことができ、自分を振り返ることができました。高校生が大学生から学んだことよりも、私が高校生から学んだことの方が多かったかもしれません。小松サマースクールは高校生にリベラルアーツ教育を経験してもらうサマースクールです。学生や生徒だけが受け身で学ぶのではなく、先生も学生・生徒との交わりからたくさん学ぶ、互いに学び合う、それがリベラルアーツだと思います。小松サマースクールも大学生、高校生、そして講師の大人の方々が互いに学び合う、そんなコミュニティーだと思います。
+                        <br>私たちは運営スタッフとして、高校生のみなさんによりよい経験をしてもらうために頑張っています。しかし、最後の答えまで準備するのは私たちの役目ではありません。高校生のみなさんにはKSSを通して、貪欲にどんどんいろんなことを吸収していってほしいと思います。
+                        <br>みなさんにお会いできること、そしてみなさんと学び合うこと、楽しみにしています！
+                    </p>
+                    <p class="signature">小松サマースクール2017 実行委員長
+                        <br>国際基督教大学教養学部4年
+                        <br><span class="name">加藤 慶</span></p>
+                </div>
+                <img src="kei.jpg" alt="Kei Kato" width="390">
+
+            </div>
         </div>
     </div>
 
     <div id="footer">
+        <div class="footer-content">
+            <p>Copyright © Komatsu Summer School. All Rights Reserved.</p>
 
+            <a id="go-top" href="#body"></a>
+
+            <script type="text/javascript">
+                $("a[href^=#]").on("click", function () {
+                    var speed = 1000;
+                    var href = $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top - 100;
+                    $('body,html').animate({
+                        scrollTop: position
+                    }, speed, 'swing');
+                    return false;
+                });
+
+//                $(window).on("scroll", function () {
+//                    if ($(window).scrollTop() > 0) {
+//                        $("#go-top").fadeIn(200);
+//                    } else {
+//                        $("#go-top").fadeOut(200);
+//                    }
+//                });
+            </script>
+        </div>
     </div>
 
-    <!--
-    <div class="container">
-        
-            <video autoplay loop poster="main.JPG">
-                <source src="KSS_shotver_master.mov" type="video/mov">
-            </video>
 
-
-    </div>
--->
 </body>
 
 </html>
