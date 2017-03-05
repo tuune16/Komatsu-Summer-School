@@ -26,18 +26,46 @@
 
 <body id="body">
     <div id="header">
-        <nav>
+        <nav class="is-animation">
             <ul>
                 <li><img src="logo.png" alt="logo" height="47"></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Summer School</a></li>
-                <li><a href="">Application</a></li>
-                <li><a href="">Press</a></li>
-                <li><a href="">Contacts</a></li>
-                <li><a href="">English</a></li>
+                <li><a href="#">About</a>
+                    <!--
+                    <ul>
+                        <li>What's KSS?</li>
+                        <li>Story</li>
+                        <li>Komatsu City</li>
+                        <li>Partners</li>
+                        <li>Members</li>
+                    </ul>
+-->
+                </li>
+                <li><a href="#">Summer School</a></li>
+                <li><a href="#">Application</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">English</a></li>
             </ul>
         </nav>
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var $win = $(window),
+                $header = $('nav'),
+                animationClass = 'is-animation';
+
+            $win.on('load scroll', function () {
+                var value = $(this).scrollTop();
+                if (value > 600) {
+                    $header.addClass(animationClass);
+                } else {
+                    $header.removeClass(animationClass);
+                }
+
+            });
+        });
+    </script>
 
     <div id="main-visual">
         <div class="visual">
@@ -113,12 +141,11 @@
                         <br>To all Komatsu Summer School participants, see this program as the first step of your journey. Away from the shackles of our daily lives, see this summer school as an opportunity to experiment and learn. My journey was forced upon. Through grit and perseverance, I've reached the level that I am in today. Some opportunities are hidden in unfortunate events. While, some opportunities are a once in a lifetime chance.With an open mind, seize your own journey.
                     </p>
                     <p class="signature">小松サマースクール代表
-                        <br>タクトピア株式会社アドバイザー
-                        <br>フォースバレー・コンシェルジュ株式会社アドバイザー
+                        <br>タクトピア株式会社アドバイザー/フォースバレー・コンシェルジュ株式会社アドバイザー
                         <br>Harvard College Japan Initiative 名誉会長
                         <br><span class="name">Stephane Fouche</span></p>
                 </div>
-                <img src="stephane2.jpg" alt="Stephane Fouche" width="390">
+                <img src="stephane2.jpg" alt="Stephane Fouche" width="400">
             </div>
             <div id="kei" class="content2">
                 <h3>実行委員長挨拶</h3>
@@ -131,7 +158,7 @@
                         <br>国際基督教大学教養学部4年
                         <br><span class="name">加藤 慶</span></p>
                 </div>
-                <img src="kei.jpg" alt="Kei Kato" width="390">
+                <img src="kei.jpg" alt="Kei Kato" width="400">
 
             </div>
         </div>
@@ -142,6 +169,7 @@
             <p>Copyright © Komatsu Summer School. All Rights Reserved.</p>
 
             <a id="go-top" href="#body"></a>
+            <a class="page-top" href="#body">PAGE TOP</a>
 
             <script type="text/javascript">
                 $("a[href^=#]").on("click", function () {
