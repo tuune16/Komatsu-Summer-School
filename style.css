@@ -75,11 +75,45 @@ nav li:hover {
 #main-visual {
     width: 100%;
     height: 620px;
-    background: rgba(0, 0, 0, 0.5) url(main.JPG) center center no-repeat;
+/*    background: rgba(0, 0, 0, 0.5) url(main.JPG) center center no-repeat;*/
     background-size: cover;
-    background-blend-mode: overlay;
+/*    background-blend-mode: overlay;*/
     position: relative;
     color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 620px;
+    background-color: rgba(0, 0, 0, 0.35);
+    background-blend-mode: overlay;
+    z-index: -5;
+}
+
+#slideshow {
+   position: relative;
+   width:  100%;
+   height: 620px;
+   z-index: -10;
+   overflow: hidden;
+}
+
+#slideshow img {
+   position: absolute;
+   top: 0;
+   left:0;
+   z-index: 8;
+   opacity: 0.0;
+}
+
+#slideshow img.active {
+   z-index: 10;
+   opacity: 1.0;
+}
+
+#slideshow img.last-active {
+   z-index: 9;
 }
 
 .visual {
